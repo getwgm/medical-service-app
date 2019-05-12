@@ -1,0 +1,11 @@
+.input-group {
+    margin-bottom: 10px;
+}
+body {
+    background-image: url(img/bg.png);
+    background-size: 100%;
+}
+.title {
+    text-align: center;
+    font-size: 50px;
+}
