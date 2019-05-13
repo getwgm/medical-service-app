@@ -1,0 +1,33 @@
+{
+  "name": "medical-service-app",
+  "version": "1.0.0",
+  "description": "This is a app for medical service",
+  "main": "server.js",
+  "scripts": {
+    "start": "node .",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getwgm/medical-service-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/getwgm/medical-service-app/issues"
+  },
+  "homepage": "https://github.com/getwgm/medical-service-app#readme",
+  "devDependencies": {
+    "chalk": "^2.4.2",
+    "jest": "^24.8.0",
+    "koa-static": "^5.0.0",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "glob": "^7.1.4",
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.11.0",
+    "mysql": "^2.17.1"
+  }
+}
