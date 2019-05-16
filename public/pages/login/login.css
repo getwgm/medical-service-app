@@ -1,5 +1,6 @@
 .input-group {
     margin-bottom: 10px;
+    text-align: center;
 }
 body {
     background-image: url(img/bg.png);
@@ -8,4 +9,15 @@ body {
 .title {
     text-align: center;
     font-size: 50px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 50px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+}
+
+.form {
+    padding-top: 200px;
 }

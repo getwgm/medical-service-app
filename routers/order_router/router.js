@@ -6,7 +6,24 @@
  */
 const processor = require('./processor')
 const Router = require('koa-router')
+const compose = require('koa-compose')
 
-module.exports = async function (ctx, next) {
-  await next()
-}
+const router = new Router()
+
+router.get('/test', (ctx, next) => {
+  const test = ctx.query.doctorName
+
+  // search 
+  const info = processor.func(test);
+  
+  ctx.body = info
+})
+
+router.post("/test", (ctx, next) => {
+  const test = ctx.request.body.test
+  ctx.body = test
+})
+
+
+
+module.exports = compose([router.routes(), router.allowedMethods()])

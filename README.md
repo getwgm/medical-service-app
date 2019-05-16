@@ -1,2 +1,0 @@
-# medical-service-app
-dfdfsdf

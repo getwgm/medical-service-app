@@ -13,6 +13,4 @@ const processor = {
   }
 }
 
-processor.getOffices()
-
 module.exports = processor
