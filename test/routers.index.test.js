@@ -1,4 +1,6 @@
-const routersPromise = require('../routers/index')
+const routersAsync = require('../routers/index')
+
+const routersPromise = routersAsync()
 
 test('the length of routers array whether is true', () => {
   routersPromise.then(routers => {
