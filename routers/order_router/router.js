@@ -10,20 +10,4 @@ const compose = require('koa-compose')
 
 const router = new Router()
 
-router.get('/test', (ctx, next) => {
-  const test = ctx.query.doctorName
-
-  // search 
-  const info = processor.func(test);
-  
-  ctx.body = info
-})
-
-router.post("/test", (ctx, next) => {
-  const test = ctx.request.body.test
-  ctx.body = test
-})
-
-
-
 module.exports = compose([router.routes(), router.allowedMethods()])

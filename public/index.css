@@ -1,4 +1,23 @@
 .btn{
-    background-color: rgb(red, green, blue);
+    background-color: rgb(160, 160, 160);
     border-radius: 0px ;
+    border-radius: 25px;
+    padding: 20px;
+    width: 100px;
+    height: 70px;
+}
+body{
+    background-image: url('img/index2.jpg');
+    background-size: 100%;
+    text-align: center;
+
+}
+.style{
+    font-family: monospace;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 300;
+}
+div{
+    margin-top: 500px;
 }

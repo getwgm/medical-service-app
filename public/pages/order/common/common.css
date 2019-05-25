@@ -1,0 +1,53 @@
+.tab {
+
+}
+.tab-nav {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-left: 0;
+    background-color: #b0e0e6;
+    margin: 0;
+}
+.tab-nav li {
+    flex-grow: 1;
+    text-align: center;
+}
+.tab-nav a {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    text-decoration: none;
+}
+.tab-nav a.active {
+    color: #000;
+}
+.tab-content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.tab-content h3 {
+    padding: 10px 15px;
+    padding-left: 0;
+}
+.tab-content .block {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+.tab-content .block:last-child {
+    margin-bottom: 20px;
+}
+.tab-content .block .checkbox {
+    vertical-align: middle;
+    margin-left: 20px;
+}
+.tab .certain {
+    float: right;
+    padding: 10px 20px;
+    margin-right: 20px;
+    color: #fff;
+    background-color: grey;
+    border-radius: 8px;
+    cursor: pointer;
+}

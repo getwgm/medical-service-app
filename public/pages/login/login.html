@@ -11,38 +11,22 @@
 </head>
 <body>
     <h3 class="title">Login</h3>
-   
+
     <form class="form">
-        
-        <div class="input-group">Username: <input type="text" name="" maxlength="20" size="10"></div>
-        <div class="input-group">Password:&nbsp; <input type="text" name="" maxlength="20" size="10"></div>
+
+        <div class="input-group">Username: <input id="username" type="text" name="" maxlength="20" size="10"></div>
+        <div class="input-group">Password:&nbsp; <input id="pwd" type="password" name="" maxlength="20" size="10"></div>
+        <!--<div class="input-group">
+            types <input type="radio" name="" value="doctor"  />doctors
+            <input type="radio" name="" value="user" />user
+        </div>-->
         <div class="input-group">
-            types <input type="radio" name="" value="doctor" checked="checked"/>doctors
-            <input type="radio" name="" value="user"/>user
-        </div>
-        <div class="input-group">
-            <input id="login-btn" class="btn" type="button" value="Get Started" onclick="redirectToHome()">
+            <input id="login-btn" class="btn" type="button" value="Get Started">
         </div>
     </form>
 
 </body>
 </html>
-<script src="../../common/flexiable.js"></script>
-<script src="login.js"></script>
 <script src="../../common/axios.js"></script>
-<script>
-    // axios.get("/test", {
-    //     params: {
-    //         test: "test"
-    //     }
-    // }).then(res => {
-    //     document.write(res.data)
-    // })
-
-
-    axios.post("/test", {
-        test: "test"
-    }).then(res => {
-        console.log(res.data)
-    })
-</script>
+<script src="../../common/common.js"></script>
+<script src="login.js"></script>

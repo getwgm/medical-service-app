@@ -33,4 +33,15 @@ html, body {
     background-color: #ccc;
     cursor: pointer;
     margin-bottom: 20px;
+    text-decoration: none;
+    color: #000;
+}
+.butn{
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    width: 200px;
+    height: 80px;
+    padding: 20px 30px;
+    margin: 10px;
 }

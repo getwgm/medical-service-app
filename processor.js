@@ -8,7 +8,7 @@ class DBPool {
     const defaultOptions = {
       connectionLimit: 10,
       host: 'localhost',
-      database: 'medical',
+      database: 'medicalapp',
       insecureAuth: true
     }
     // judge if secure

@@ -1,0 +1,15 @@
+.commit-wrap {
+    padding-top: 80px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.commit {
+    display: block;
+    font-size: 24px;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 8px;
+    color: #fff;
+    background-color: gray;
+    cursor: pointer;
+}

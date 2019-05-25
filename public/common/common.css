@@ -12,3 +12,68 @@ body {
     display: block;
     clear: both;
 }
+/* 头部导航 */
+.header-nav {
+    margin: 0;
+    background-color: #e0e0e0;
+}
+.back {
+    color: #666;
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.back .iconfont {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* layout */
+.l-flex {
+    display: flex;
+}
+.l-flex-item {
+    flex-grow: 1;
+}
+.l-flex-item--stretch {
+    align-self: stretch;
+}
+
+/* components */
+.c-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+.c-list-item {
+    background-color: #b0e0e6;
+    border: 1px solid #eee;
+}
+.c-list-item a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.c-table {
+    width: 100%;
+    caption-side: top;
+    border-collapse: collapse;
+}
+.c-table, .c-table  th, .c-table td {
+    border: 1px solid #eee;
+}
+.c-table caption {
+    padding: 10px 15px;
+}
+.c-table th, .c-table tr:nth-child(2n) {
+    background-color: #b0e0e6;
+}
+.c-table tr:nth-child(2n+1) {
+    background-color: #f5f5f5;
+}
+.c-table th {
+    padding: 10px 0;
+}
+.c-table td {
+    text-align: center;
+    padding: 30px 0;
+}
