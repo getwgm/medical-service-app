@@ -16,8 +16,7 @@
     <div class="header-nav">
         <a id="back-btn" class="back">
             <i class="iconfont">&#xe679;</i>
-        </a>
-    </div>
+        </a></div>
     <table id="history-table" class="c-table">
         <caption class="title">血常规检测</caption>
         <thead>
@@ -27,35 +26,35 @@
                 <th>单位</th>
                 <th>参考值</th>
                 <th>检测值</th>
-            </tr>
-        </thead>
+            </tr> </thead>
         <tbody>
             <tr>
                 <td>RBC</td>
                 <td>红细胞</td>
                 <td>10<sup>12</sup>/L</td>
                 <td>3.5~5.5</td>
-                <td></td>
+                <td id="RBC"></td>
             </tr>
             <tr>
                 <td>WBC</td>
                 <td>白细胞</td>
                 <td>10<sup>9</sup>/L</td>
                 <td>4~10</td>
-                <td></td>
+                <td id="WBC"></td>
             </tr>
             <tr>
                 <td>HGB</td>
                 <td>血红蛋白</td>
                 <td>g/L</td>
                 <td>110~160</td>
-                <td></td>
+                <td id="HGB"></td>
             </tr>
         </tbody>
     </table>
 </body>
 
 </html>
-
+<script src="../../../common/axios.js"></script>
 <script src="../../../common/common.js"></script>
+<script src="../common/common.js"></script>
 <script src="blood.js"></script>

@@ -27,6 +27,22 @@ components.initList = function (id, data) {
     }
 }
 
+components.loadDataToTable = function (tBodySelector, columns, data) {
+    var tbody = document.querySelector(tBodySelector)
+    function createRow (item) {
+        var tr = document.createElement('tr')
+        columns.forEach(function (column) {
+            var td = document.createElement('td')
+            td.innerText = item[column]
+            tr.appendChild(td)
+        })
+        return tr
+    }
+    data.forEach(function (item) {
+        tbody.appendChild(createRow(item))
+    })
+}
+
 // tools namespace
 var tools = {}
 
@@ -36,7 +52,9 @@ tools.redirectTo = function (href) {
 }
 
 tools.get = function (url, params, success, error) {
-    axios.get(url, body).then(function (res) {
+    axios.get(url, {
+        params: params
+    }).then(function (res) {
         success(res.data)
     }).catch(function (err) {
         error(err)
@@ -51,3 +69,6 @@ tools.post = function (url, body, success, error) {
         error(err)
     })
 }
+
+// page common script
+var page = {}

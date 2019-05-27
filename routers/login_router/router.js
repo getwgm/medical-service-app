@@ -10,11 +10,11 @@ router.post('/api/login', async (ctx, next) => {
     let pwd = ctx.request.body.pwd
     let result = await processor.login(username, pwd)
     let state = result.length > 0
+    // remember the username by session
+    if (state) {
+        ctx.session.username = username
+    }
     ctx.body = { state }
-})
-
-router.post('/api/register', (ctx, next) => {
-    
 })
 
 module.exports = compose([router.routes(), router.allowedMethods()])

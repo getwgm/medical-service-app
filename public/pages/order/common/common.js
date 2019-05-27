@@ -74,3 +74,39 @@ components.order.initTab = function (data) {
         }
     }
 }
+
+tools.order = {}
+
+tools.order.getOrderSelected = function (subject) {
+    function getOrderTime () {
+        var i, len, checkboxs = document.querySelectorAll('.checkbox')
+        for (i = 0, len = checkboxs.length; i < len; i++) {
+            if (checkboxs[i].checked) {
+                return i === 0 ? 'am' : 'pm'
+            }
+        }
+    }
+    var day = document.querySelector('#tab .active').innerText
+    var time = getOrderTime()
+    return { subject, day, time }
+}
+
+page.order = {}
+
+page.order.load = function (subject) {
+    var certain = document.querySelector('.certain')
+    components.initBackEvent()
+    tools.get('/api/order/info', { subject }, (data) => {
+        components.order.initTab(data.result)
+    }, (err) => {
+        console.log(err)
+    })
+    certain.addEventListener('click', function () {
+        var httpBody = tools.order.getOrderSelected(subject)
+        tools.post('/api/order', httpBody, function (data) {
+            alert('预约成功！')
+        }, function (err) {
+            console.log(err)
+        })
+    })
+}
