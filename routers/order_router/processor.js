@@ -13,7 +13,7 @@ const processor = {
       delete item.orderId
       delete item.day
       delete item.subject
-      item.ticket = [ item.am, item.pm ]
+      item.ticket = [item.am, item.pm]
       delete item.am
       delete item.pm
       item.am = '8:00 - 11:00'

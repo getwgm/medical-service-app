@@ -1,3 +1,3 @@
 window.addEventListener('load', function () {
-    page.order.load('clinical')
+  page.order.load('clinical')
 })

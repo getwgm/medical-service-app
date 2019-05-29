@@ -12,14 +12,14 @@ const routersAsync = require('./routers')
 const app = new Koa()
 
 // enable the koa-session
-app.keys = ['newest secret key', 'older secret key'];
+app.keys = ['newest secret key', 'older secret key']
 const CONFIG = {
-  key: 'koa:sess', 
+  key: 'koa:sess',
   maxAge: 86400000,
-  autoCommit: true, 
-  overwrite: true, 
-  httpOnly: true, 
-  signed: true, 
+  autoCommit: true,
+  overwrite: true,
+  httpOnly: true,
+  signed: true,
   rolling: false,
   renew: false
 }

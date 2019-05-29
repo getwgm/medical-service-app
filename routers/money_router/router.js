@@ -1,14 +1,20 @@
-/**
- * This is the order routers modules
- * @module orderRouter
- * @author maoyonglong
- * @export { async function } This is a middleware of koa
- */
-const processor = require('./processor')
+const Processor = require('./processor')
 const Router = require('koa-router')
 const compose = require('koa-compose')
 
 const router = new Router()
+
+const processor = new Processor()
+
+const checkOptions = ['drug', 'price']
+checkOptions.forEach(option => {
+  let url = '/api/money/' + option
+  router.get(url, async (ctx, next) => {
+    const username = ctx.session.username
+    const result = await processor.getCheckInfo(option, username)
+    ctx.body = result
+  })
+})
 
 // get order info interface
 router.get('/api/order/info', async (ctx, next) => {

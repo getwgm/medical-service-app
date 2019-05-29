@@ -17,6 +17,11 @@
     "url": "https://github.com/getwgm/medical-service-app/issues"
   },
   "homepage": "https://github.com/getwgm/medical-service-app#readme",
+  "standard": {
+    "ignore": [
+      "public/**/*.js"
+    ]
+  },
   "devDependencies": {
     "chalk": "^2.4.2",
     "jest": "^24.8.0",

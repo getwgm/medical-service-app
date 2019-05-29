@@ -1,3 +1,3 @@
 window.onload = function () {
-    components.initBackEvent()
+  components.initBackEvent()
 }

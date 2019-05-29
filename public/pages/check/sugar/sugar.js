@@ -1,4 +1,4 @@
 window.addEventListener('load', function () {
-    components.initBackEvent()
-    page.check.load('sugar')
+  components.initBackEvent()
+  page.check.load('sugar')
 })

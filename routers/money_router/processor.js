@@ -1,6 +1,6 @@
-const { promisify } = require('util')
-
+// get the global pool
 const pool = global.pool
+const { promisify } = require('util')
 
 const query = promisify(pool.query)
 
